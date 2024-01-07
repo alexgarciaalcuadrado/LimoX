@@ -1,0 +1,62 @@
+.book-chauffer-container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../public/images/woman-working.jpg) no-repeat center center;
+  background-size: cover;
+
+  @include medium-small-screen {
+    justify-content: center;
+  }
+
+  @include tablet-screen {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-and-inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 100px;
+
+    @include tablet-screen {
+      margin: 0;
+      align-items: center;
+      text-align: center;
+    }
+
+    .title-container {
+      color: white;
+      font-size: 50px;
+      width: 724px;
+
+      @include medium-small-screen {
+        width: auto;
+      }
+
+      h2 {
+        margin: 0;
+        line-height: 1;
+      }
+
+    }
+
+    .request-service-container {
+      p {
+        @include medium-small-screen {
+          padding: 0;
+          margin: 0;
+          margin-left: 10px;
+        }
+        @include small-screen {
+          font-size: 10px;
+          margin-right: 10px
+        }
+      }
+    }
+  }
+}

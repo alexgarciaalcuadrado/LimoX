@@ -1,0 +1,23 @@
+.navbar {
+    background-color: black;
+    justify-content: space-between;
+
+    @include medium-screen{
+        height: 65px;
+
+        h2{
+            font-size: 30px;
+        }
+      }
+    
+    @include small-screen{
+        h3{
+            display: none;
+        }
+    }
+
+    span{
+        font-family: 'Rock Salt', cursive;
+        font-weight: 100;
+    }
+}

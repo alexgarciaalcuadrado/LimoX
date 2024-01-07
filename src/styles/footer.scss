@@ -1,0 +1,118 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+  margin: 35px;
+
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 85%;
+
+    @include medium-small-screen{
+      display: flex;
+      flex-direction: column;  
+    }
+
+    h2 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    p{
+        margin: 0;
+        font-size: 12px;
+    }
+
+    span {
+      font-family: "Rock Salt", cursive;
+      font-weight: 100;
+    }
+
+    .item {
+      padding: 0 28px;
+      @include medium-small-screen{
+        padding: 5px 20px;
+        text-align: center;
+      }
+      &:not(:last-child) {
+        border-right: 2px solid black;
+
+        @include medium-small-screen{
+          border: none;  
+        }
+      }
+
+      .email-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #878585;
+        border-radius: 40px;
+        padding: 0 15px;
+        cursor: pointer;
+
+        input{
+          border: 0;
+          width: 80%;
+
+          &:focus-visible{
+            outline: none;
+          }
+        }
+
+        @include medium-small-screen{
+          width: 30%;
+          margin: auto;
+        }
+
+        @include small-screen {
+          width: 60%;
+        }
+      }
+    }
+    .icon-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        background-color: #c3c2c2;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  hr{
+    width: 90%;
+    background-color: black;
+    height: 2px;
+    border: 1px;
+    margin: 25px 0;
+  }
+
+  .final-message-container{
+    width: 60%;
+    text-align: center;
+
+    @include medium-small-screen {
+      font-size: 12px;
+    }
+  }
+
+  .copyright-container{
+    text-align: center;
+    p{
+        margin: 0;
+        @include medium-small-screen {
+          font-size: 12px;
+        }
+    }
+  }
+}

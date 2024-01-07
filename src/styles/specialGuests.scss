@@ -1,0 +1,36 @@
+.special-guests-container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../public/images/rich-woman-car.jpg) no-repeat center center;
+  background-size: cover;
+
+  @include tablet-screen {
+    align-items: end;
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 100px;
+    color: white;
+    font-size: 50px;
+    width: 724px;
+
+    @include medium-small-screen{
+      font-size: 40px;
+    }
+
+    @include tablet-screen {
+      margin: 10px;
+      font-size: 30px;
+    }
+
+    h3 {
+      margin: 0;
+      line-height: 1;
+    }
+  }
+}

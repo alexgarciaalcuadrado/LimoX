@@ -1,0 +1,58 @@
+.enrich-mobility-container {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  height: 90vh;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url(../../public/images/inside-car.jpg) no-repeat center center;
+  background-size: cover;
+
+  .text-container {
+    margin: 40px 100px;
+    color: #363333;
+
+    @include tablet-screen {
+      margin: 10px;
+    }
+
+    .titles-container {
+      font-size: 30px;
+      line-height: 0.2;
+      font-size: 45px;
+      text-shadow: 0px 0px 11px rgba(113, 113, 113, 0.7);
+
+      @include tablet-screen {
+        font-size: 35px;
+      }
+
+      @include small-screen {
+        font-size: 25px;
+      }
+    }
+
+    .paragraph-container {
+      width: 500px;
+      @include tablet-screen {
+        width: auto;
+      }
+      p {
+        font-family: sans-serif;
+        font-size: 33px;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        @include tablet-screen {
+          font-size: 20px;
+        }
+
+        @include small-screen {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

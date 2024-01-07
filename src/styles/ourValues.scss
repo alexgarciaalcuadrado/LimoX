@@ -1,0 +1,51 @@
+.our-values-container {
+  display: flex;
+  height: 90vh;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    url(../../public/images/open-car-dor.jpg) no-repeat center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+
+  .options-container {
+    width: 80%;
+
+    .option-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid black;
+      cursor: pointer;
+
+      &:last-child {
+        border-bottom: 1px solid black;
+      }
+
+      h3 {
+        font-family: "Noto Sans Mongolian", sans-serif;
+        font-weight: 700;
+        margin: 10px;
+
+        @include tablet-screen {
+          font-size: 15px;
+        }
+      }
+
+      &:hover {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(249, 70, 18, 0) 0%,
+          rgba(255, 255, 255, 1) 25%,
+          rgba(255, 252, 251, 1) 50%,
+          rgba(255, 255, 255, 1) 75%,
+          rgba(5, 20, 57, 0) 100%
+        );
+      }
+    }
+  }
+}

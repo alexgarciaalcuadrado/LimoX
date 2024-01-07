@@ -1,0 +1,70 @@
+.flee-options-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title-and-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #393838;
+    h2 {
+      font-size: 40px;
+      margin: 0;
+
+      @include tablet-screen {
+        font-size: 30px;
+      }
+
+      @include small-screen {
+        font-size: 20px;
+      }
+    }
+
+    .description-container {
+      width: 53%;
+      font-family: "Noto Sans Mongolian", sans-serif;
+      p {
+        margin: 0;
+
+        @include small-screen {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .logos-container {
+      margin-top: 20px;
+
+      @include small-screen {
+        width: 60%;
+      }
+      
+      .logo {
+        width: 100px;
+        height: 75px;
+        opacity: 0.4;
+        padding: 10px 35px;
+        border: 1px solid black;
+        border-top: 0;
+        border-bottom: 0;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        @include medium-small-screen{
+          padding: 10px;
+        }
+
+        @include small-screen {
+          width: 75px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

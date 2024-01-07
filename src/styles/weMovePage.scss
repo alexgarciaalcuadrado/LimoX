@@ -1,0 +1,107 @@
+.we-move-container {
+  display: flex;
+  align-items: end;
+  flex-direction: row;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../public/images/woman-car.jpg) no-repeat center center;
+  background-size: cover;
+
+  .title-and-inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 100px;
+
+    @include tablet-screen {
+      margin: 0;
+      align-items: center;
+    }
+
+    .title-container {
+      font-size: 50px;
+      width: 390px;
+      color: white;
+
+      @include tablet-screen {
+        text-align: center;
+      }
+
+      @include small-screen {
+        width: auto;
+      }
+
+      h2 {
+        margin: 0;
+        line-height: 1;
+
+        @include medium-small-screen {
+          font-size: 60px;
+        }
+
+        @include tablet-screen {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .inputs-and-button-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 48px 30px;
+
+      @include medium-screen {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+
+      .input-container {
+        background-color: white;
+        width: 28%;
+
+        @include medium-screen {
+            width: 50%;
+            margin: auto;
+        }
+
+        @include tablet-screen {
+          width: 80%;
+        }
+
+        @include tablet-screen {
+          width: 100%;
+        }
+
+        .input {
+          width: 100%;
+
+          label {
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .car-button {
+        background-color: rgb(255, 255, 255);
+        transition: background-color 0.3s ease;
+        width: 8%;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(215 212 212);
+        }
+
+        @include medium-screen {
+            margin: auto;
+            width: 15%;
+        }
+
+        @include tablet-screen {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

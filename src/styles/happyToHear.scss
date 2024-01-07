@@ -1,0 +1,51 @@
+.happy-to-hear-container {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../../public/images/limousine.jpg) no-repeat center center;
+    background-size: cover;
+  
+    .title-and-inputs-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 50px 100px;
+      
+      @include medium-screen{
+        align-items: center;
+        margin: 0;
+        margin-bottom: 20px
+      }
+  
+      .title-container {
+        color: white;
+        font-size: 35px;
+        width: 827px;
+        text-shadow: 3px 7px 4px rgba(0,0,0,0.72);
+        margin-bottom: 15px;
+
+        @include medium-screen{
+          text-align: center;
+          width: auto;
+        }
+  
+        h2 {
+          margin: 0;
+          line-height: 1;
+
+          @include medium-screen{
+            font-size: 40px;
+            text-align: center;
+            width: auto;
+          }
+
+          @include tablet-screen{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }

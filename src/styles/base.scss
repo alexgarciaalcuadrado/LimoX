@@ -1,0 +1,26 @@
+body{
+    margin: 0 !important;
+}
+
+h2, h3{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+h2{
+    @include medium-screen{
+        font-size: 60px;
+      }
+
+      @include medium-small-screen{
+        font-size: 40px;
+      }
+
+      @include small-screen{
+        font-size: 25px;
+      }
+}
+
+.row-flex{
+    display: flex;
+    align-items: center;
+}
